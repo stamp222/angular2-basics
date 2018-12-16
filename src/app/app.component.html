@@ -1,3 +1,17 @@
 <h1>
   {{title}}
 </h1>
+<hr>
+<!-- <app-users [users] = "registeredUsers" (alertThrown) = "onChildAlert($event)">  -->
+<app-users (alertThrown) = "onChildAlert($event)">  </app-users>
+<hr>
+
+<p>Zmienna TS {{age}}</p>
+
+<p>{{person.name}}, wiek {{person.age}}</p>
+
+<input type="text" [value] = 'age'>
+
+<p *ngFor="let user of users"> {{user}} </p>
+
+<button (click) = 'age = 30'>Click me! </button>
